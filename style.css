@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+background-color: #FFE382;
+margin: 0;
+padding: 0;
+height: 100vh;
+position: relative;
+}
+.container {
+  width: 100%;
+}
+.container h1 {
+  text-transform: capitalize;
+  margin: 0;
+  font-family: Rubik Doodle Shadow;
+  width: fit-content;
+  margin: auto;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+/* .container .title img {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  margin: auto;
+} */
+
+form {
+  display: flex;
+  width: 100%;
+  background-color: #FFC47E;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width:767px) {
+  form {
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+  }
+}
+form input[type="text"] {
+  padding: 20px;
+  background-color: #FFF78A;
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  max-width: 1000px;
+}
+@media (max-width:767px) {
+  form input[type="text"]{
+    width: 100%;
+  }
+}
+form input[type="text"]:focus {
+  outline: none;
+}
+form input[type="text"]::placeholder {
+  transition-duration: .3s;
+  text-transform: capitalize;
+  color: #999;
+}
+form input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+form .tool {
+  padding: 20px;
+}
+@media (max-width:767px) {
+  form .tool {
+    padding: 20px 0 0;
+  }
+}
+form input[type="submit"],
+button.all {
+  padding: 10px 30px;
+  border: none;
+  background-color: #55ee14;
+  text-transform: capitalize;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+}
+button.all {
+  background-color: firebrick;
+  color: white;
+  text-transform: capitalize;
+  border: none;
+  margin-left: 20px;
+}
+.tasks {
+  width: 100%;
+  min-height: calc(100vh - 206px);
+  background-color: #FFC47E;
+  margin: 10px auto;
+  padding: 20px;
+}
+.task {
+  background-color: #FFF78A;
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remove {
+  padding: 10px 30px;
+  border: none;
+  text-transform: capitalize;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  background-color: firebrick;
+  cursor: pointer;
+}
